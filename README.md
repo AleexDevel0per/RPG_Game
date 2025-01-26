@@ -7,7 +7,7 @@ Esse projeto foi desenvolvido no **Ubuntu 22.04** com **Ruby 3.2.2**
 
 Para executar este projeto em sua máquina, é necessário ter o Ruby instalado.
 
-Para instalar o **Ruby on Rails** no **Ubuntu 22.04**, siga estas etapas a seguir:
+Para instalar o **Ruby** no **Ubuntu 22.04**, siga estas etapas a seguir:
 
 1. Atualizar o Sistema
 Primeiro, certifique-se de que o sistema está atualizado:
