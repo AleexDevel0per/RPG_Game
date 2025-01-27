@@ -134,6 +134,38 @@ status: Exibe o status atual do personagem (vida, pontos especiais, curas restan
 6. status: Exibe o status atual do inimigo (vida, pontos especiais, defesa).
 7. Função batalha
 
+---
+### Detalhes sobre a Defesa
+
+A defesa é uma mecânica que permite ao jogador ou inimigo reduzir o dano recebido em ataques subsequentes. Aqui estão os principais pontos:
+
+### 1. **Como funciona:**
+   - Quando o jogador ou inimigo escolhe a ação de **defender**, seu valor de `defesa` é aumentado por um número aleatório entre 5 e 10.
+   - Esse valor de defesa é usado para reduzir o dano de ataques recebidos.
+
+### 2. **Custo:**
+   - A defesa consome **2 pontos especiais**. Se o jogador ou inimigo não tiver pontos suficientes, a opção de defender será indisponível.
+
+### 3. **Redução de dano:**
+   - O valor da defesa é subtraído do dano causado pelo adversário. Se a defesa for maior que o dano, o dano final é ajustado para 0, evitando qualquer perda de vida.
+
+### 4. **Efeito temporário:**
+   - Atualmente, o valor da defesa acumulada permanece até que seja utilizado para reduzir o dano recebido. Uma possível melhoria seria limitar a duração do efeito a apenas um turno.
+
+#### Exemplo:
+- O jogador escolhe defender, e a defesa aumenta para 8.
+- No próximo turno, o inimigo ataca causando 15 de dano base. Com a defesade 8, o dano final será:
+
+    - Dano final = 15 - 8 
+    - Dano final = 7
+
+- Se o dano base fosse 5, o dano final seria 0.
+
+### 5. **Importante:**
+ - A defesa é uma estratégia útil para mitigar danos enquanto se planeja ações futuras, como curar ou economizar pontos especiais.
+
+OBS: **Tópico aplicado as classes de Jogador e Inimigo**
+
 ## Controle do fluxo principal do jogo
 
 Inicia o jogo, pede o nome do herói e define os parâmetros iniciais.
@@ -144,7 +176,7 @@ Exibe os status dos personagens após cada turno e termina o jogo quando a vida 
 
 ### Fluxo do Jogo
 - O jogo começa com o jogador inserindo o nome do herói.
-- O herói e o dragão começam com 100 e 150 de vida, respectivamente, e ambos têm 10 pontos especiais.
+- O herói e o dragão começam com 100 de vida, respectivamente, e ambos têm 10 pontos especiais.
 - O jogador pode escolher entre atacar, usar ataque especial, defender ou curar a cada turno, gerenciando seus pontos especiais e curas restantes.
 - O dragão, por sua vez, também executa ações baseadas em sua inteligência, podendo atacar, se defender ou usar um ataque especial.
 
