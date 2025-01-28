@@ -203,6 +203,6 @@ Após a escolha do jogador, o jogo continua, alternando entre o herói e o drag�
 
 Este projeto de RPG em texto foi desenvolvido com o objetivo de consolidar conhecimentos em Ruby e explorar a programação orientada a objetos de maneira prática e criativa.
 
-Com classes bem definidas e funcionalidades básicas, como batalhas, evolução de personagem e sistema de fases, o jogo proporciona uma base sólida para quem deseja se aventurar no desenvolvimento de games simples.
+Com classes bem definidas e funcionalidades básicas, como atacar, ataque especial, aumentar defesa e curar o jogo proporciona uma base sólida para quem deseja se aventurar no desenvolvimento de games simples.
 
 É um projeto inicial, mas representa um grande passo no aprendizado e na aplicação de conceitos fundamentais da programação.
