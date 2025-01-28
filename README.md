@@ -1,5 +1,5 @@
 # RPG
-Este projeto, é um jogo de RPG baseado em texto, onde o jogador pode criar um personagem, lutar contra inimigos, explorar fases, adquirir itens e evoluir seu personagem. O jogo é desenvolvido em Ruby, com foco em aprendizado e diversão.
+Este projeto, é um jogo de RPG baseado em texto, onde o jogador pode criar um personagem e lutar contra inimigos. O jogo é desenvolvido em Ruby, com foco em aprendizado e diversão.
 
 
 # Como instalar
@@ -140,7 +140,7 @@ status: Exibe o status atual do personagem (vida, pontos especiais, curas restan
 A defesa é uma mecânica que permite ao jogador ou inimigo reduzir o dano recebido em ataques subsequentes. Aqui estão os principais pontos:
 
 ### 1. **Como funciona:**
-   - Quando o jogador ou inimigo escolhe a ação de **defender**, seu valor de `defesa` é aumentado por um número aleatório entre 5 e 10.
+   - Quando o jogador ou inimigo escolhe a ação de **defender**, seu valor de `defesa` é aumentado entre 1 e 2.
    - Esse valor de defesa é usado para reduzir o dano de ataques recebidos.
 
 ### 2. **Custo:**
